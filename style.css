@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+header{
+    background: black
+}
+#nav-desktop{
+    display: none;
+}
+.navbar{
+    background-color: plum;
+    color: black;
+}
+link li{
+    color: black;
+}
