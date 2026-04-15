@@ -17,7 +17,6 @@ body{
   width: 25%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.95); 
-  border-right: 1px solid #ff0000; 
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -45,14 +44,20 @@ body{
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.4s ease;
+  font-size: 4.1rem;
 }
 
 
 .side-menu.active .nav-links li {
   opacity: 1;
   transform: translateY(0);
-  transition-delay: 0.3s; 
+  transition: all 0.5s ease;
 }
+
+.side-menu.active .nav-links li:nth-child(1) { transition-delay: 0.2s; }
+.side-menu.active .nav-links li:nth-child(2) { transition-delay: 0.3s; }
+.side-menu.active .nav-links li:nth-child(3) { transition-delay: 0.4s; }
+.side-menu.active .nav-links li:nth-child(4) { transition-delay: 0.5s; }
 
 .nav-links a {
   color: white;
@@ -101,8 +106,8 @@ body{
     background: 
     linear-gradient(
         0deg,
-        rgba(0,0,0,0.9),
-        rgba(0,0,0,0.9)
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
     )
     ,url("https://imgproxy.domestika.org/unsafe/w:1200/rs:fill/plain/src://blog-post-open-graph-covers/000/002/093/2093-original.png?1561557395");
     background-size: cover;
