@@ -1,15 +1,109 @@
-@import "tailwindcss";
+body{
+    background: 
+    linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://imgproxy.domestika.org/unsafe/w:1200/rs:fill/plain/src://blog-post-open-graph-covers/000/002/093/2093-original.png?1561557395");
+    background-size: cover;
+}
 
-header{
-    background: black
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95); 
+  border-right: 1px solid #ff0000; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8%;
+  padding-left: 40px;
+  
+
+  transform: translateX(-100%);
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 100;
 }
-#nav-desktop{
-    display: none;
+
+
+.side-menu.active {
+  transform: translateX(0);
 }
-.navbar{
-    background-color: plum;
-    color: black;
+
+
+.nav-links {
+  list-style: none;
 }
-link li{
-    color: black;
+
+.nav-links li {
+  margin: 25px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+
+.side-menu.active .nav-links li {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s; 
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-links a:hover {
+  border-bottom: 3px solid white;
+}
+
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 200;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menu-btn.open .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menu-btn.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.open .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+.opacity{
+    background: 
+    linear-gradient(
+        0deg,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.9)
+    )
+    ,url("https://imgproxy.domestika.org/unsafe/w:1200/rs:fill/plain/src://blog-post-open-graph-covers/000/002/093/2093-original.png?1561557395");
+    background-size: cover;
 }

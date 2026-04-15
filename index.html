@@ -5,13 +5,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
 
 </html>
-  <body>
+  <body id="body">
 
- 
 
+      <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+    <nav id="side-menu" class="side-menu">
+        <ul class="nav-links">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Prueba</a></li>
+    <li><a href="#">Prueba</a></li>
+    <li><a href="#">Prueba</a></li>
+  </ul>
+</nav>
+
+
+ <script src="script.js"></script>   
   </body>
 </html>
